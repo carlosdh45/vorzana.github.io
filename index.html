@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vorzana — Your Brand. Our Intelligence.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Automated marketing. AI-generated content. 24/7 publishing without effort." />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #050b1b;
+      --card: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.12);
+      --blue: #3b82f6;
+      --cyan: #22d3ee;
+      --green: #34d399;
+      --text-dim: rgba(255,255,255,0.7);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: white;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Background */
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at top, rgba(59,130,246,.35), transparent 50%),
+        radial-gradient(circle at bottom right, rgba(34,211,238,.18), transparent 45%);
+    }
+
+    header, section, footer {
+      max-width: 1100px;
+      margin: auto;
+      padding: 32px 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
+
+    .logo-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+    }
+
+    .btn {
+      background: white;
+      color: #050b1b;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding-top: 80px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 900;
+      line-height: 1.1;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, var(--blue), var(--cyan), var(--green));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 640px;
+      font-size: 18px;
+      color: var(--text-dim);
+      margin-top: 20px;
+    }
+
+    .cta-row {
+      margin-top: 32px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .primary {
+      background: var(--blue);
+      color: white;
+    }
+
+    .secondary {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: white;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 800;
+    }
+
+    ul {
+      margin-top: 16px;
+      padding-left: 20px;
+      color: var(--text-dim);
+    }
+
+    .steps div {
+      margin-bottom: 12px;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 14px;
+      margin-top: 6px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: white;
+    }
+
+    form button {
+      margin-top: 16px;
+      width: 100%;
+      padding: 14px;
+      background: var(--blue);
+      border: none;
+      border-radius: 12px;
+      font-weight: 700;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <header>
+    <div class="logo">
+      <div class="logo-badge">V</div>
+      VORZANA
+    </div>
+    <a href="#waitlist" class="btn">Join the waitlist</a>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Your Brand.<br><span class="gradient">Our Intelligence.</span></h1>
+      <p>
+        Automated marketing. AI-generated content. 24/7 publishing without effort.
+        Vorzana builds your strategy, creates content, and posts automatically.
+      </p>
+
+      <div class="cta-row">
+        <a href="#waitlist" class="btn primary">Join the Waitlist</a>
+        <a href="#feature" class="btn secondary">See how it works</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Solution</h2>
+    <div class="grid grid-3" style="margin-top:24px">
+      <div class="card">AI marketing strategy (avatar, pillars, positioning)</div>
+      <div class="card">High-quality content (reels, carousels, captions)</div>
+      <div class="card">Automated content calendar and publishing</div>
+    </div>
+  </section>
+
+  <section id="feature">
+    <h2>Star Feature</h2>
+    <div class="card steps" style="margin-top:24px">
+      <div>1. AI builds your strategy and content calendar</div>
+      <div>2. You approve</div>
+      <div>3. Connect your social accounts</div>
+      <div>4. AI posts automatically 24/7</div>
+      <div>5. AI learns and improves</div>
+      <p style="margin-top:16px;color:var(--text-dim)">
+        Equivalent to a full-time social media manager for <strong>$29–$49/month</strong>.
+      </p>
+    </div>
+  </section>
+
+  <section id="waitlist" class="grid grid-3">
+    <div>
+      <h2>Join the Waitlist</h2>
+      <p style="color:var(--text-dim);margin-top:12px">
+        Be among the first to access Vorzana and publish effortlessly.
+      </p>
+    </div>
+
+    <div class="card">
+      <form id="waitlistForm">
+        <input name="name" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Email address" required />
+        <select name="role">
+          <option>Founder</option>
+          <option>Business Owner</option>
+          <option>Marketing Team</option>
+          <option>Agency</option>
+        </select>
+        <button type="submit">Join the Waitlist</button>
+        <p id="status" style="margin-top:10px;font-size:12px"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Vorzana. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const WAITLIST_ENDPOINT = "PEGAR_AQUI_TU_URL_DE_APPS_SCRIPT";
+
+    document.getElementById("waitlistForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const status = document.getElementById("status");
+
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        role: form.role.value,
+        source: "vorzana-html"
+      };
+
+      try {
+        const res = await fetch(WAITLIST_ENDPOINT, {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: { "Content-Type": "application/json" }
+        });
+
+        if (!res.ok) throw new Error();
+        status.textContent = "✅ You're on the list!";
+        status.style.color = "#34d399";
+        form.reset();
+      } catch {
+        status.textContent = "❌ Something went wrong. Try again.";
+        status.style.color = "#f87171";
+      }
+    });
+  </script>
+</body>
+</html>
